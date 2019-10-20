@@ -33,7 +33,6 @@ function setup() {
   let height = windowHeight;
   createCanvas(width, height);
   textSize(32);
-  textFont('Helvetica');
 
   DRAG = .85;
   NUM_PARTICLES = 35000;
