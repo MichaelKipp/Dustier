@@ -69,7 +69,8 @@ function draw() {
     noStroke();
     fill(200, .75);
     text("Move the mouse", (windowWidth * 1/5), (windowHeight/2));
-  } else if (!lookedUnderTheCovers) {
+  }
+  if (!lookedUnderTheCovers) {
     noStroke();
     fill(200, 1);
     text("Press space to see tracking", (windowWidth * 3/5), (windowHeight/2));

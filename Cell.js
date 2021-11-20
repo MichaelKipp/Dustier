@@ -41,19 +41,14 @@ class Cell {
   }
 
   display() {
-    if (lookUnderTheCovers) {
+    noStroke();
+    if (lookUnderTheCovers && this.active) {
       if (this.active) {
         fill(50);
-        noStroke();
-        rect(this.origin.x, this.origin.y, this.width, this.height);
-      } else {
-        fill(0);
-        noStroke();
         rect(this.origin.x, this.origin.y, this.width, this.height);
       }
     } else {
       fill(0);
-      noStroke();
       rect(this.origin.x, this.origin.y, this.width, this.height);
     }
 
